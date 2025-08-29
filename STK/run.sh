@@ -13,6 +13,7 @@ while true; do
     echo -e "${RED}[${YELLOW}03${RED}]${RESET} Scan Networks"
     echo -e "${RED}[${YELLOW}04${RED}]${RESET} DDoS Tool"
     echo -e "${RED}[${YELLOW}05${RED}]${RESET} Cmatrix"
+    echo -e "${RED}[${YELLOW}06${RED}]${RESET} İwctl Shell"
     echo ""
     echo -e "${YELLOW}Tip:${RESET} Please Do Not Run Simple Tool Kit As Sudo Permissions."
     echo ""
@@ -47,6 +48,12 @@ while true; do
             clear
             xterm -e cmatrix
             clear
+            read -p "Press Enter Button For Continue..."
+            ;;
+        6)  
+            clear
+            sudo systemctl start iwd 
+            xterm -e iwctl
             read -p "Press Enter Button For Continue..."
             ;;
         *)
