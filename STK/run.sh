@@ -14,7 +14,7 @@ while true; do
     echo -e "${RED}[${YELLOW}04${RED}]${RESET} DDoS Tool"
     echo -e "${RED}[${YELLOW}05${RED}]${RESET} Cmatrix"
     echo ""
-    echo -e "${YELLOW}Tip:${RESET} Please Do Not Run Simple Tool Kit As Sudo."
+    echo -e "${YELLOW}Tip:${RESET} Please Do Not Run Simple Tool Kit As Sudo Permissions."
     echo ""
     read -p "> " secim
 
