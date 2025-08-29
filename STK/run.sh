@@ -51,7 +51,7 @@ while true; do
             ;;
         *)
             clear
-            echo "Geçersiz seçim!"
+            echo "Invalid Selection!"
             read -p "Devam etmek için Enter tuşuna basın..."
             ;;
     esac
