@@ -30,8 +30,8 @@ class RDDoS_Tool_GUI(QWidget):
     def initUI(self):
         banner = QLabel(
             "<font color='red'><b>DDoS Tool</b></font> <font color='purple'>Version: {}</font><br>"
-            "Author: <font color='red'>ctrl-alt-del-2010</font><br>"
-            "Github: <a href='https://github.com/ctrl-alt-del-2010-developer/Simple-Tool-Kit/Programs/DDoS_tool'>DDoS_Tool</a><br>"
+            "Author: <font color='red'>ctrl-alt-del-2010-developer</font><br>"
+            "Github: <a href='https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit/Programs/DDoS_tool'>DDoS_Tool</a><br>"
             "<font color='green'>For legal purposes only</font>".format(version)
         )
         banner.setTextFormat(Qt.RichText)
