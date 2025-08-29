@@ -12,7 +12,7 @@ while true; do
     echo -e "${RED}[${YELLOW}02${RED}]${RESET} Tor IP"
     echo -e "${RED}[${YELLOW}03${RED}]${RESET} Scan Networks"
     echo -e "${RED}[${YELLOW}04${RED}]${RESET} DDoS Tool"
-    echo -e "${RED}[${YELLOW}05${RED}]${RESET} Cmatrix
+    echo -e "${RED}[${YELLOW}05${RED}]${RESET} Cmatrix"
     echo ""
     echo -e "${YELLOW}Tip:${RESET} Please Do Not Run This Program As Sudo."
     echo ""
