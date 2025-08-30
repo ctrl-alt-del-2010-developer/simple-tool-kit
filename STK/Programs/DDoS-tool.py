@@ -77,7 +77,7 @@ class RDDoS_Tool_GUI(QWidget):
         self.button_about.clicked.connect(self.show_about)
 
         main_layout = QVBoxLayout()
-        main_layout.addWidget(banner)
+        main_layout.addWidget(self.banner)
         main_layout.addLayout(radio_layout)
         main_layout.addWidget(self.input_target)
         main_layout.addWidget(QLabel("Port Selection:"))
