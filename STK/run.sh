@@ -8,9 +8,9 @@ RESET='\e[0m'
 while true; do
     clear
     cat ascii.txt  
-    echo -e "${RED}[${YELLOW}01${RED}]${RESET} Red Hawk"
+    echo -e "${RED}[${YELLOW}01${RED}]${RESET} Red Hawk     ${RED}[${YELLOW}07${RED}]${RESET} Ping Test"
     echo -e "${RED}[${YELLOW}02${RED}]${RESET} Tor IP"
-    echo -e "${RED}[${YELLOW}03${RED}]${RESET} Scan Networks"
+    echo -e "${RED}[${YELLOW}03${RED}]${RESET} Network Scan"
     echo -e "${RED}[${YELLOW}04${RED}]${RESET} DDoS Tool"
     echo -e "${RED}[${YELLOW}05${RED}]${RESET} Cmatrix"
     echo -e "${RED}[${YELLOW}06${RED}]${RESET} İwctl Shell"
@@ -54,6 +54,10 @@ while true; do
             clear
             sudo systemctl start iwd 
             xterm -e iwctl
+            read -p "Press Enter Button For Continue..."
+            ;;
+        7)  
+            xterm -e ping 1.1.1.1 
             read -p "Press Enter Button For Continue..."
             ;;
         *)
