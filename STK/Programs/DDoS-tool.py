@@ -27,15 +27,15 @@ class RDDoS_Tool_GUI(QWidget):
         self.initUI()
         self.log_signal.connect(self.append_output)  # Bağlantı kuruldu!
 
-    def initUI(self):
-        banner = QLabel(
-            "<font color='red'><b>DDoS Tool</b></font> <font color='purple'>Version: {}</font><br>"
-            "Author: <font color='red'>ctrl-alt-del-2010-developer</font><br>"
-            "Github: https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit/blob/main/STK/Programs/DDoS-tool.py"
-            "<font color='green'>For legal purposes only</font>".format(version)
-        )
-        banner.setTextFormat(Qt.RichText)
-        banner.setOpenExternalLinks(True)
+    banner = QLabel(
+    "<font color='red'><b>DDoS Tool</b></font> <font color='purple'>Version: {}</font><br>"
+    "Author: <font color='red'>ctrl-alt-del-2010-developer</font><br>"
+    "Github: <a href='https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit/blob/main/STK/Programs/DDoS-tool.py'>"
+    "https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit/blob/main/STK/Programs/DDoS-tool.py</a><br>"
+    "<font color='green'>For legal purposes only</font>".format(version)
+)
+banner.setTextFormat(Qt.RichText)
+banner.setOpenExternalLinks(True)
 
         self.radio_domain = QRadioButton("Website Domain")
         self.radio_ip = QRadioButton("IP Address")
