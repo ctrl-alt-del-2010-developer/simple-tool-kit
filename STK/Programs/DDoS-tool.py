@@ -27,15 +27,16 @@ class RDDoS_Tool_GUI(QWidget):
         self.initUI()
         self.log_signal.connect(self.append_output)  # Bağlantı kuruldu!
 
-banner = QLabel(
-    "<font color='red'><b>DDoS Tool</b></font> <font color='purple'>Version: {}</font><br>"
-    "Author: <font color='red'>ctrl-alt-del-2010-developer</font><br>"
-    "Github: <a href='https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit/blob/main/STK/Programs/DDoS-tool.py'>"
-    "https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit/blob/main/STK/Programs/DDoS-tool.py</a><br>"
-    "<font color='green'>For legal purposes only</font>".format(version)
-)
-banner.setTextFormat(Qt.RichText)
-banner.setOpenExternalLinks(True)
+    def initUI(self):
+        self.banner = QLabel(
+            "<font color='red'><b>DDoS Tool</b></font> <font color='purple'>Version: {}</font><br>"
+            "Author: <font color='red'>ctrl-alt-del-2010-developer</font><br>"
+            "Github: <a href='https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit/blob/main/STK/Programs/DDoS-tool.py'>"
+            "https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit/blob/main/STK/Programs/DDoS-tool.py</a><br>"
+            "<font color='green'>For legal purposes only</font>".format(version)
+        )
+        self.banner.setTextFormat(Qt.RichText)
+        self.banner.setOpenExternalLinks(True)
 
         self.radio_domain = QRadioButton("Website Domain")
         self.radio_ip = QRadioButton("IP Address")
@@ -43,6 +44,8 @@ banner.setOpenExternalLinks(True)
         radio_layout = QHBoxLayout()
         radio_layout.addWidget(self.radio_domain)
         radio_layout.addWidget(self.radio_ip)
+        
+        # Diğer widget ve layout tanımlarını buraya aynı şekilde (self ile) koymalısın.
 
         self.input_target = QLineEdit()
         self.input_target.setPlaceholderText("Enter domain (e.g. example.com) or IP address")
