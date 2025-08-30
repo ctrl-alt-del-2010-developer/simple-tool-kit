@@ -27,7 +27,7 @@ class RDDoS_Tool_GUI(QWidget):
         self.initUI()
         self.log_signal.connect(self.append_output)  # Bağlantı kuruldu!
 
-    banner = QLabel(
+banner = QLabel(
     "<font color='red'><b>DDoS Tool</b></font> <font color='purple'>Version: {}</font><br>"
     "Author: <font color='red'>ctrl-alt-del-2010-developer</font><br>"
     "Github: <a href='https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit/blob/main/STK/Programs/DDoS-tool.py'>"
