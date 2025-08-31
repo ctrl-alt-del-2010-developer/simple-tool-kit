@@ -8,8 +8,8 @@ RESET='\e[0m'
 while true; do
     clear
     cat ascii.txt  
-    echo -e "${RED}[${YELLOW}01${RED}]${RESET} Red Hawk     ${RED}[${YELLOW}07${RED}]${RESET} Ping Test"
-    echo -e "${RED}[${YELLOW}02${RED}]${RESET} Tor IP"
+    echo -e "${RED}[${YELLOW}01${RED}]${RESET} Red Hawk      ${RED}[${YELLOW}07${RED}]${RESET} Ping Test"
+    echo -e "${RED}[${YELLOW}02${RED}]${RESET} Tor IP        ${RED}[${YELLOW}08${RED}]${RESET} Firefox"
     echo -e "${RED}[${YELLOW}03${RED}]${RESET} Network Scan"
     echo -e "${RED}[${YELLOW}04${RED}]${RESET} DDoS Tool"
     echo -e "${RED}[${YELLOW}05${RED}]${RESET} Cmatrix"
@@ -58,6 +58,10 @@ while true; do
             ;;
         7)  
             xterm -e ping 1.1.1.1 
+            read -p "Press Enter Button For Continue..."
+            ;;
+        8)  
+            torsocks firefox
             read -p "Press Enter Button For Continue..."
             ;;
         *)
