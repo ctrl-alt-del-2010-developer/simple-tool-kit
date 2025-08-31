@@ -22,6 +22,7 @@ The toolkit includes several basic but essential cybersecurity tools for:
 - DDoS Tool, 
 - DNS and HTTP header analysis and whois scanner (Three In One),  
 - Tor Ip Tool etc.
+- Sql injection (Sqlmap)
 
 > Built using **Python (≈85%)** and **Shell (≈14%)**, ensuring both portability and scriptability.
 
