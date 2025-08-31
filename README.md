@@ -56,14 +56,19 @@ Starting cybersecurity can be overwhelming. Most powerful tools are complex or r
 
 ```
 simple-tool-kit/
-├── tools/
-│   ├── port_scanner.py
-│   ├── whois_lookup.sh
-│   ├── dns_checker.py
-│   └── ...
-├── toolkit.py
-├── README.md
-└── requirements.txt
+├── LICENSE
+├── STK/
+|   ├── ascii.txt
+|   ├── README.md
+|   ├── requirements.txt
+|   ├── setup.sh
+|   ├── run.sh
+|   └── Programs 
+│        ├── port_scanner.py
+│        ├── DDoS-tool.py
+│        ├── about.txt
+|        ├── ip_changer.py
+│        └── red_hawk.py
 ```
 
 ## 🚀 Future Plans
@@ -108,6 +113,5 @@ All contributions are welcome — no effort is too small.
 
 🔗 GitHub: [https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit](https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit)
 
-````
-````
+
 
