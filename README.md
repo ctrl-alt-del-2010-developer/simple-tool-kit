@@ -19,8 +19,7 @@ This toolkit is ideal for:
 The toolkit includes several basic but essential cybersecurity tools for:
 
 - IP and domain port scanner,
-- DDoS Tool,
-- Cmatrix, 
+- DDoS Tool, 
 - DNS and HTTP header analysis and whois scanner (Three In One),  
 - Tor Ip Tool etc.
 
