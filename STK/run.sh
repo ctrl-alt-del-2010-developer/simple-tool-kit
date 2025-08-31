@@ -73,10 +73,11 @@ while true; do
             read -p "Press Enter Button For Continue..."
             ;;
         99)  
+            clear
             cat ~/simple-tool-kit/STK/Programs/about.txt
             read -p "Press Enter Button For Continue..."
             ;;
-        00)  
+         0)  
             echo -e "${RED}Exiting...${RESET}"
             exit 0
             ;;
