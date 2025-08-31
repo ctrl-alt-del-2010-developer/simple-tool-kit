@@ -41,13 +41,13 @@ Starting cybersecurity can be overwhelming. Most powerful tools are complex or r
 2. Install dependencies:
 
    ```bash
-   pip install -r requirements.txt
+   sudo bash setup.sh
    ```
 
-3. Run the toolkit:
+3. Run the toolkit(Please Dont Run This Script İf you Have Root Permissions):
 
    ```bash
-   python3 toolkit.py
+   bash run.sh
    ```
 
 4. Select a tool from the menu — each is explained and beginner-friendly.
