@@ -65,6 +65,11 @@ while true; do
             torbrowser-launcher
             read -p "Press Enter Button For Continue..."
             ;;
+        9)  
+            clear
+            python3 ~/simple-tool-kit/STK/Programs/port_scanner.py
+            read -p "Press Enter Button For Continue..."
+            ;;
         *)
             clear
             echo "Invalid Selection!"
