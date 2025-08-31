@@ -15,6 +15,8 @@ while true; do
     echo -e "${RED}[${YELLOW}05${RED}]${RESET} Cmatrix"
     echo -e "${RED}[${YELLOW}06${RED}]${RESET} İwctl Shell"
     echo ""
+    echo -e "${RED}[${YELLOW}99${RED}]${RESET} About         ${RED}[${YELLOW}00${RED}]${RESET} Exit"          
+    echo ""
     echo -e "${YELLOW}Tip:${RESET} Please Do Not Run Simple Tool Kit As Sudo Permissions."
     echo ""
     read -p "> " secim
@@ -69,6 +71,14 @@ while true; do
             clear
             python3 ~/simple-tool-kit/STK/Programs/port_scanner.py
             read -p "Press Enter Button For Continue..."
+            ;;
+        99)  
+            cat ~/simple-tool-kit/STK/Programs/about.txt
+            read -p "Press Enter Button For Continue..."
+            ;;
+        00)  
+            echo -e "${RED}Exiting...${RESET}"
+            exit 0
             ;;
         *)
             clear
