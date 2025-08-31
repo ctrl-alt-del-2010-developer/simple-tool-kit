@@ -22,14 +22,14 @@ while true; do
     case "$secim" in
         1)
             clear
-            python3 ~/STK/Programs/red_hawk.py
+            python3 ~/simple-tool-kit/STK/Programs/red_hawk.py
             clear
             read -p "Press Enter Button For Continue..."
             ;;
         2)
             clear
             sudo systemctl start tor
-            xterm -e python3 ~/STK/Programs/ip_changer.py
+            xterm -e python3 ~/simple-tool-kit/STK/Programs/ip_changer.py
             clear
             read -p "Press Enter Button For Continue..."
             ;;
@@ -40,7 +40,7 @@ while true; do
             ;;
         4)  
             clear
-            python3 ~/STK/Programs/DDoS-tool.py
+            python3 ~/simple-tool-kit/STK/Programs/DDoS-tool.py
             clear
             read -p "Press Enter Button For Continue..."
             ;;
