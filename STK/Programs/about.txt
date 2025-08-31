@@ -1,3 +1,4 @@
+-----------------------------------------------------------------------------------------------------------------------------------
 🛡️ Simple Tool Kit – A Cybersecurity Tool for Beginners
 
 🎯 Project Purpose
@@ -29,3 +30,5 @@ Getting started in cybersecurity can be overwhelming. Most of the powerful tools
 industry are either too complex or require prior knowledge. 
 This project aims to bridge the gap between theory and practice, offering a hands-on experience without the intimidation factor.
 Think of Simple Tool Kit as a “training ground” before diving into tools like Metasploit, Burp Suite, or Wireshark.
+
+-----------------------------------------------------------------------------------------------------------------------------------
