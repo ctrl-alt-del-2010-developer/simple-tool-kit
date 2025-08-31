@@ -18,11 +18,11 @@ This toolkit is ideal for:
 
 The toolkit includes several basic but essential cybersecurity tools for:
 
-- IP and domain information gathering  
-- Basic port scanning (using tools like `nmap`)  
-- Whois lookups  
-- DNS and HTTP header analysis  
-- Encoding/decoding methods (Base64, ROT13, etc.)
+- IP and domain port scanner,
+- DDoS Tool,
+- Cmatrix, 
+- DNS and HTTP header analysis and whois scanner (Three In One),  
+- Tor Ip Tool etc.
 
 > Built using **Python (≈85%)** and **Shell (≈14%)**, ensuring both portability and scriptability.
 
