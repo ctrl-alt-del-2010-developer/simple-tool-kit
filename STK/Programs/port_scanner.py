@@ -5,7 +5,6 @@ from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout,
     QLineEdit, QPushButton, QListWidget, QLabel
 )
-from PyQt5.QtCore import Qt
 
 class PortScannerApp(QWidget):
     def __init__(self):
@@ -17,12 +16,12 @@ class PortScannerApp(QWidget):
     def init_ui(self):
         layout = QVBoxLayout()
 
-        self.label = QLabel("Enter IP Address:")
+        self.label = QLabel("Enter IP Address or Domain:")
         layout.addWidget(self.label)
 
-        self.ip_input = QLineEdit()
-        self.ip_input.setPlaceholderText("e.g. 192.168.1.1")
-        layout.addWidget(self.ip_input)
+        self.input_field = QLineEdit()
+        self.input_field.setPlaceholderText("e.g. 192.168.1.1 or example.com")
+        layout.addWidget(self.input_field)
 
         self.scan_button = QPushButton("Start Scan")
         self.scan_button.clicked.connect(self.start_scan)
@@ -34,16 +33,25 @@ class PortScannerApp(QWidget):
         self.setLayout(layout)
 
     def start_scan(self):
-        ip = self.ip_input.text().strip()
-        if not ip:
-            self.result_list.addItem("Please enter a valid IP address.")
+        user_input = self.input_field.text().strip()
+        if not user_input:
+            self.result_list.addItem("Please enter a valid IP or domain.")
             return
 
         self.result_list.clear()
-        self.result_list.addItem(f"Scanning {ip}...")
+        self.result_list.addItem(f"Resolving '{user_input}'...")
 
-        scan_thread = threading.Thread(target=self.scan_ports, args=(ip,))
+        # Start thread to prevent GUI from freezing
+        scan_thread = threading.Thread(target=self.resolve_and_scan, args=(user_input,))
         scan_thread.start()
+
+    def resolve_and_scan(self, user_input):
+        try:
+            ip = socket.gethostbyname(user_input)
+            self.result_list.addItem(f"Resolved to IP: {ip}")
+            self.scan_ports(ip)
+        except socket.gaierror:
+            self.result_list.addItem(f"Error: Could not resolve '{user_input}'.")
 
     def scan_ports(self, ip):
         open_ports = []
@@ -57,7 +65,7 @@ class PortScannerApp(QWidget):
                         self.result_list.addItem(f"Port {port} is open.")
             except socket.error:
                 self.result_list.addItem(f"Error: Could not connect to {ip}.")
-                break
+                return
 
         if not open_ports:
             self.result_list.addItem("No open ports found.")
