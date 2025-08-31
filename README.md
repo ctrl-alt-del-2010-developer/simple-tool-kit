@@ -112,16 +112,6 @@ All contributions are welcome — no effort is too small.
 
 ---
 
-### 📦 Ne Yapmalısın?
 
-1. Yukarıdaki içeriği kopyala  
-2. Proje klasöründe `README.md` adlı bir dosya oluştur  
-3. İçeriği içine yapıştır  
-4. Terminalde aşağıdakileri uygula:
-
-```bash
-git add README.md
-git commit -m "Add full README documentation"
-git push
 ````
 
