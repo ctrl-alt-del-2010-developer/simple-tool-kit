@@ -36,6 +36,7 @@ Starting cybersecurity can be overwhelming. Most powerful tools are complex or r
    ```bash
    git clone https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit.git
    cd simple-tool-kit
+   cd STK
 ````
 
 2. Install dependencies:
