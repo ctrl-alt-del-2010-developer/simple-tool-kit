@@ -61,7 +61,7 @@ while true; do
             read -p "Press Enter Button For Continue..."
             ;;
         8)  
-            torsocks firefox
+            firefox
             read -p "Press Enter Button For Continue..."
             ;;
         *)
