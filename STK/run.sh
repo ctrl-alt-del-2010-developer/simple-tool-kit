@@ -11,7 +11,7 @@ while true; do
     echo -e "${RED}[${YELLOW}01${RED}]${RESET} Red Hawk      ${RED}[${YELLOW}07${RED}]${RESET} Ping Test"
     echo -e "${RED}[${YELLOW}02${RED}]${RESET} Tor IP        ${RED}[${YELLOW}08${RED}]${RESET} Tor Browser"
     echo -e "${RED}[${YELLOW}03${RED}]${RESET} Network Scan  ${RED}[${YELLOW}09${RED}]${RESET} Port Scanner"
-    echo -e "${RED}[${YELLOW}04${RED}]${RESET} DDoS Tool"
+    echo -e "${RED}[${YELLOW}04${RED}]${RESET} DDoS Tool     ${RED}[${YELLOW}10${RED}]${RESET} Sqlmap"
     echo -e "${RED}[${YELLOW}05${RED}]${RESET} Cmatrix"
     echo -e "${RED}[${YELLOW}06${RED}]${RESET} İwctl Shell"
     echo ""
@@ -70,6 +70,11 @@ while true; do
         9)  
             clear
             python3 ~/simple-tool-kit/STK/Programs/port_scanner.py
+            read -p "Press Enter Button For Continue..."
+            ;;
+        10)  
+            clear
+            xterm -e sqlmap --wizard
             read -p "Press Enter Button For Continue..."
             ;;
         99)  
