@@ -109,9 +109,5 @@ All contributions are welcome — no effort is too small.
 🔗 GitHub: [https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit](https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit)
 
 ````
-
----
-
-
 ````
 
