@@ -1,4 +1,4 @@
-### ✅ Dosya: `README.md`
+### `README.md`
 
 ````markdown
 # 🛡️ Simple Tool Kit – A Cybersecurity Tool for Beginners
