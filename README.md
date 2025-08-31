@@ -45,7 +45,7 @@ Starting cybersecurity can be overwhelming. Most powerful tools are complex or r
    sudo bash setup.sh
    ```
 
-3. Run the toolkit(Please Dont Run This Script İf you Have Root Permissions):
+3. Run the toolkit (Please Do Not Run This Script İf you Have Root Permissions):
 
    ```bash
    bash run.sh
