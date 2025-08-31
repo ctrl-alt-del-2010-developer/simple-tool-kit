@@ -37,7 +37,8 @@ while true; do
             ;;
         3)  
             clear
-            xterm -e sudo airodump-ng wlan0
+            wifi_ifaces=$(iw dev | awk '/Interface/ {print $2}')
+            xterm -e sudo airodump-ng $wifi_ifaces 
             read -p "Press Enter Button For Continue..."
             ;;
         4)  
