@@ -1,4 +1,5 @@
 #!/bin/bash                                         
+#Please only fork if you want to improve my project.
 
 RED='\e[31m'
 GREEN='\e[32m'
@@ -7,21 +8,21 @@ RESET='\e[0m'
 
 while true; do
     clear
-    cat ascii.txt  
+    cat ascii.txt  #Show The Ascii
     echo -e "${RED}[${YELLOW}01${RED}]${RESET} Red Hawk      ${RED}[${YELLOW}07${RED}]${RESET} Ping Test"
     echo -e "${RED}[${YELLOW}02${RED}]${RESET} Tor IP        ${RED}[${YELLOW}08${RED}]${RESET} Tor Browser"
     echo -e "${RED}[${YELLOW}03${RED}]${RESET} Network Scan  ${RED}[${YELLOW}09${RED}]${RESET} Port Scanner"
-    echo -e "${RED}[${YELLOW}04${RED}]${RESET} DDoS Tool     ${RED}[${YELLOW}10${RED}]${RESET} Sqlmap"
+    echo -e "${RED}[${YELLOW}04${RED}]${RESET} DDoS Tool     ${RED}[${YELLOW}10${RED}]${RESET} Sqlmap"   #Show The Menu
     echo -e "${RED}[${YELLOW}05${RED}]${RESET} Cmatrix       ${RED}[${YELLOW}11${RED}]${RESET} Wireshark"
     echo -e "${RED}[${YELLOW}06${RED}]${RESET} İwctl Shell   ${RED}[${YELLOW}12${RED}]${RESET} Htop"
     echo ""
     echo -e "${RED}[${YELLOW}99${RED}]${RESET} About         ${RED}[${YELLOW}00${RED}]${RESET} Exit"          
     echo ""
-    echo -e "${YELLOW}Tip:${RESET} Please Do Not Run Simple Tool Kit As Sudo Permissions."
+    echo -e "${YELLOW}Tip:${RESET} Please Do Not Run Simple Tool Kit As Sudo Permissions." #Show The Tip
     echo ""
-    read -p "> " secim
+    read -p "> " opition
 
-    case "$secim" in
+    case "$opition" in
         1)
             clear
             python3 ~/simple-tool-kit/STK/Programs/red_hawk.py
