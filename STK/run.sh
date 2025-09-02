@@ -8,7 +8,6 @@ RESET='\e[0m'
 
 while true; do
     clear
-    echo -e "${RED}"
     cat ascii.txt  #Show The Ascii
     echo -e "${RESET}"
     echo -e "${RED}[${YELLOW}01${RED}]${RESET} Red Hawk      ${RED}[${YELLOW}07${RED}]${RESET} Ping Test"
