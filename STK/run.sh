@@ -9,7 +9,6 @@ RESET='\e[0m'
 while true; do
     clear
     cat ascii.txt  #Show The Ascii
-    echo -e "${RESET}"
     echo -e "${RED}[${YELLOW}01${RED}]${RESET} Red Hawk      ${RED}[${YELLOW}07${RED}]${RESET} Ping Test"
     echo -e "${RED}[${YELLOW}02${RED}]${RESET} Tor IP        ${RED}[${YELLOW}08${RED}]${RESET} Tor Browser"
     echo -e "${RED}[${YELLOW}03${RED}]${RESET} Network Scan  ${RED}[${YELLOW}09${RED}]${RESET} Port Scanner"
