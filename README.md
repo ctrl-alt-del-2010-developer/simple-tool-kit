@@ -1,59 +1,55 @@
-### `README.md`
+```markdown
+# 🛡️ Simple Tool Kit – Yeni Başlayanlar için Siber Güvenlik Aracı
 
-````markdown
-# 🛡️ Simple Tool Kit – A Cybersecurity Tool for Beginners
+**Simple Tool Kit**, etik korsanlık ve ağ güvenliği alanına yeni adım atanların ilk deneyimlerini güvenli bir şekilde yaşamalarına yardımcı olmak üzere tasarlanmış, hafif ve yeni başlayanlara uygun bir siber güvenlik araç setidir. Karmaşık araçların tersine, bu paket öğrenmeyi ve pratik yapmayı kolaylaştıracak temel araçları içerir.
 
-**Simple Tool Kit** is a lightweight, beginner-friendly cybersecurity toolkit designed to help newcomers take their first steps in the field of ethical hacking and network security. Unlike complex professional tools, this project focuses on simplicity, clarity, and hands-on learning by bundling basic utilities into a single, easy-to-use package.
+## 👥 Hedef Kitle
 
-## 👥 Target Audience
+Bu araç seti şu kişiler için idealdir:
 
-This toolkit is ideal for:
+- Siber güvenliğe yeni başlayan öğrenciler ve meraklılar  
+- Temel Linux/terminal becerilerine sahip olup güvenlik araçlarını keşfetmek isteyenler  
+- Güvenli, çevrimdışı (offline) ortamda pratik yapmak isteyen öz öğreniciler veya hobilerle ilgilenenler  
+- Etik korsanlık temellerini öğreten eğitmenler veya rehberler
 
-- Students and enthusiasts who are just getting started with cybersecurity  
-- People who have basic Linux/terminal skills and want to explore security tools  
-- Self-learners or hobbyists looking for safe, offline security practice  
-- Instructors or mentors teaching the fundamentals of ethical hacking
+## 🧰 İçindekiler
 
-## 🧰 What’s Inside?
+Araç seti, temel fakat önemli birkaç siber güvenlik aracını içerir:
 
-The toolkit includes several basic but essential cybersecurity tools for:
+- IP ve domain port tarayıcı,
+- DDoS Aracı,
+- DNS ve HTTP başlık analizleri ile whois tarayıcısı (Üçü Bir Arada),
+- Tor IP Aracı vb.
+- SQL enjeksiyon aracı (Sqlmap)
 
-- IP and domain port scanner,
-- DDoS Tool, 
-- DNS and HTTP header analysis and whois scanner (Three In One),  
-- Tor Ip Tool etc.
-- Sql injection (Sqlmap)
+> %85 civarı Python ve %14 civarı Shell kullanılarak oluşturulmuştur; bu sayede taşınabilirlik ve script uyumluluğu sağlanır.
 
-> Built using **Python (≈85%)** and **Shell (≈14%)**, ensuring both portability and scriptability.
+## 🔍 Neden Bu Proje?
 
-## 🔍 Why This Project?
+Siber güvenliğe başlamak göz korkutucu olabilir. Çoğu güçlü araç karmaşıktır veya ön bilgi gerektirir. Simple Tool Kit, öğrenme ile uygulamayı birleştirerek keşfetmek isteyenler için güvenli bir başlangıç alanı sunar.
 
-Starting cybersecurity can be overwhelming. Most powerful tools are complex or require prior knowledge. Simple Tool Kit bridges the gap between learning and doing, offering a safe space to experiment and practice before diving into tools like Metasploit, Burp Suite, or Wireshark.
+## 🛠️ Nasıl Kullanılır
 
-## 🛠️ How to Use
-
-1. Clone the repository:
+1. Depoyu klonlayın:
    ```bash
    git clone https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit.git
    cd simple-tool-kit
    cd STK
-````
+   ```
 
-2. Install dependencies:
-
+2. Bağımlılıkları yükleyin:
    ```bash
    sudo bash setup.sh
    ```
 
-3. Run the toolkit (Please Do Not Run This Script İf you Have Root Permissions):
-
+3. Araç setini çalıştırın (Not: Bu script'i root izinleriyle çalıştırmayın):
    ```bash
    bash run.sh
    ```
 
-4. Select a tool from the menu — each is explained and beginner-friendly.
+4. Menüden bir araç seçin — her bir araç yeni başlayanlar için açıklanmıştır ve kullanımı kolaydır.
 
-## 📁 Project Structure
+## 📁 Proje Yapısı
 
 ```
 simple-tool-kit/
@@ -65,54 +61,51 @@ simple-tool-kit/
 |   ├── setup.sh
 |   ├── run.sh
 |   └── Programs 
-│        ├── port_scanner.py
-│        ├── DDoS-tool.py
-│        ├── about.txt
+|        ├── port_scanner.py
+|        ├── DDoS-tool.py
+|        ├── about.txt
 |        ├── ip_changer.py
-│        └── red_hawk.py
+|        └── red_hawk.py
 ```
 
-## 🚀 Future Plans
+## 🚀 Gelecek Planları
 
-* Add more tools (e.g., vulnerability scanners, password crackers)
-* GUI version using Tkinter or PyQt
-* Multilingual support (English/Turkish)
-* Logging, reporting features
-* Educational platform integration
+- Daha fazla araç eklemek (örn. zafiyet tarayıcıları, parola kırıcılar)  
+- Tkinter veya PyQt kullanılarak GUI versiyonu  
+- Çoklu dil desteği (İngilizce/Türkçe)  
+- Kayıt (logging) ve raporlama özellikleri  
+- Eğitim platformu entegrasyonu
 
-## 💻 Educational Value
+## 💻 Eğitsel Değer
 
-Use the tools and **learn how they are built**. Code is simple, well-commented, and educational.
+Araçları kullanırken "nasıl yapıldıklarını da" öğrenin. Kodlar basit, iyi yorumlanmış ve eğitseldir.
 
-* Understand Python scripting for cybersecurity
-* Learn network interaction via command-line
-* Combine Bash and Python effectively
+- Siber güvenlik için Python betikleri (scripting) öğrenin  
+- Komut satırı aracılığıyla ağ etkileşimlerini anlayın  
+- Bash ve Python'u etkili biçimde birleştirmeyi öğrenin
 
-## 🧠 Philosophy
+## 🧠 Felsefe
 
-> Learn by building. Learn by using.
+> İnşa ederek öğren. Kullanarak öğren.
 
-This toolkit is a **starting point** — a launchpad to bigger, more advanced tools. It’s designed for exploration, learning, and ethical use.
+Bu araç seti bir başlangıç noktasıdır — daha büyük, gelişmiş araçlara geçiş için bir sıçrama tahtasıdır. Keşif, öğrenme ve etik kullanım amaçlanmıştır.
 
-## 📜 License
+## 📜 Lisans
 
-Licensed under the **MIT License**. Feel free to use, modify, or distribute for personal and educational use.
+MIT Lisansı altında lisanslanmıştır. Kişisel ve eğitsel kullanım için özgürce kullanabilir, değiştirebilir ve dağıtabilirsiniz.
 
-## 🤝 Contributing
+## 🤝 Katkıda Bulunma
 
-New to coding? Perfect!
+Koda yeni misiniz? Harika!
 
-* Fix typos or improve this README
-* Add new tools
-* Report bugs or request features via Issues or Pull Requests
+- Yazım hatalarını düzeltin veya README'yi iyileştirin  
+- Yeni araçlar ekleyin  
+- Hataları bildirin veya özellik talep edin (Issues veya Pull Request'ler aracılığıyla)
 
-All contributions are welcome — no effort is too small.
+Her türlü katkı memnuniyetle karşılanır — küçük katkılar bile değerlidir.
 
 ---
 
-🧑‍💻 **Simple Tool Kit** is built with education in mind. If you're ready to take your first step into cybersecurity, this is your place to begin.
-
-🔗 GitHub: [https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit](https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit)
-
-
-
+🧑‍💻 **Simple Tool Kit**, eğitim amaçlı geliştirilmiştir. Siber güvenliğe ilk adımınızı atmaya hazırsanız burası başlamanız için doğru yer.
+🔗 GitHub: https://github.com/ctrl-alt-del-2010-developer/simple-tool-kit
+```
