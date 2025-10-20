@@ -26,7 +26,10 @@ Araç seti, temel fakat önemli birkaç siber güvenlik aracını içerir:
 
 ## 🔍 Neden Bu Proje?
 
-Siber güvenliğe başlamak göz korkutucu olabilir. Çoğu güçlü araç karmaşıktır veya ön bilgi gerektirir. Simple Tool Kit, öğrenme ile uygulamayı birleştirerek keşfetmek isteyenler için güvenli bir başlangıç alanı sunar.
+Siber güvenliğe başlamak göz korkutucu olabilir.
+Çoğu güçlü araç karmaşıktır veya ön bilgi gerektirir.
+Simple Tool Kit, öğrenme ile uygulamayı birleştirerek
+keşfetmek isteyenler için güvenli bir başlangıç alanı sunar.
 
 ## 🛠️ Nasıl Kullanılır
 
@@ -46,6 +49,8 @@ Siber güvenliğe başlamak göz korkutucu olabilir. Çoğu güçlü araç karma
    ```bash
    bash run.sh
    ```
+## Ve Sonuç!
+![image](Screenshot_2025-10-20_19_31_39.png)
 
 4. Menüden bir araç seçin — her bir araç yeni başlayanlar için açıklanmıştır ve kullanımı kolaydır.
 
